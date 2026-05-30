@@ -1,0 +1,3136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Srajan Karta — Interior Design & Nature Styling | Bhopal, MP</title>
+  <meta name="description" content="Srajan Karta brings Design, Nature & Harmony together. Interior designing, plant styling, miniature landscapes, terrariums and Vastu Shastra expertise by Isha Verma in Bhopal, MP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+/* =============================================
+   SRAJAN KARTA — Design Tokens
+   Design • Nature • Harmony
+   ============================================= */
+
+:root {
+  /* ---- Color Palette: Sage Greens ---- */
+  --sage-900: #2D3B2D;
+  --sage-800: #3A4F3A;
+  --sage-700: #4A6741;
+  --sage-600: #5A7D52;
+  --sage-500: #6B8F71;
+  --sage-400: #8BAF84;
+  --sage-300: #A8C5A0;
+  --sage-200: #C5D9BF;
+  --sage-100: #D4E4D1;
+  --sage-50: #EEF4ED;
+
+  /* ---- Color Palette: Warm Neutrals ---- */
+  --cream: #FAF8F5;
+  --cream-dark: #F0EDE8;
+  --warm-white: #FDFCFA;
+  --beige: #E8E2D9;
+  --sand: #D4CCC0;
+
+  /* ---- Color Palette: Accent (Terracotta) ---- */
+  --terracotta: #C4704B;
+  --terracotta-dark: #A85D3B;
+  --terracotta-light: #E8A07A;
+
+  /* ---- Color Palette: Text / Grays ---- */
+  --charcoal: #2C2C2C;
+  --warm-gray-900: #3D3A36;
+  --warm-gray-700: #5C5750;
+  --warm-gray-500: #8A8578;
+  --warm-gray-300: #B8B3AA;
+  --warm-gray-100: #E8E5E0;
+
+  /* ---- Color Palette: Luxury Accent ---- */
+  --gold: #B8934B;
+  --gold-light: #D4B06A;
+
+  /* ---- Typography: Families ---- */
+  --font-heading: 'Cormorant Garamond', 'Georgia', serif;
+  --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-accent: 'Outfit', 'Arial', sans-serif;
+
+  /* ---- Typography: Sizes (Fluid) ---- */
+  --fs-hero: clamp(3rem, 6vw, 5.5rem);
+  --fs-h1: clamp(2.5rem, 4vw, 4rem);
+  --fs-h2: clamp(2rem, 3.5vw, 3rem);
+  --fs-h3: clamp(1.5rem, 2.5vw, 2rem);
+  --fs-h4: clamp(1.125rem, 1.5vw, 1.5rem);
+  --fs-body: 1rem;
+  --fs-body-lg: 1.125rem;
+  --fs-small: 0.875rem;
+  --fs-xs: 0.75rem;
+
+  /* ---- Typography: Weights ---- */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* ---- Typography: Line Heights ---- */
+  --lh-tight: 1.2;
+  --lh-snug: 1.4;
+  --lh-normal: 1.6;
+  --lh-relaxed: 1.8;
+
+  /* ---- Typography: Letter Spacing ---- */
+  --ls-tight: -0.02em;
+  --ls-normal: 0;
+  --ls-wide: 0.05em;
+  --ls-wider: 0.1em;
+  --ls-widest: 0.2em;
+
+  /* ---- Spacing Scale ---- */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 8rem;
+  --space-section: clamp(5rem, 10vw, 8rem);
+
+  /* ---- Layout ---- */
+  --max-width: 1280px;
+  --max-width-narrow: 900px;
+  --container-padding: clamp(1.5rem, 4vw, 3rem);
+  --nav-height: 80px;
+
+  /* ---- Shadows ---- */
+  --shadow-sm: 0 1px 3px rgba(44, 44, 44, 0.06);
+  --shadow-md: 0 4px 12px rgba(44, 44, 44, 0.08);
+  --shadow-lg: 0 8px 30px rgba(44, 44, 44, 0.12);
+  --shadow-xl: 0 20px 60px rgba(44, 44, 44, 0.15);
+  --shadow-card: 0 2px 20px rgba(44, 44, 44, 0.06);
+  --shadow-card-hover: 0 12px 40px rgba(44, 44, 44, 0.12);
+
+  /* ---- Borders ---- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* ---- Transitions ---- */
+  --transition-fast: 200ms ease;
+  --transition-normal: 350ms ease;
+  --transition-slow: 500ms ease;
+  --transition-slider: 1200ms ease-in-out;
+
+  /* ---- Z-Index Scale ---- */
+  --z-base: 1;
+  --z-hero-overlay: 5;
+  --z-hero-content: 10;
+  --z-nav: 1000;
+  --z-mobile-menu: 999;
+  --z-lightbox: 2000;
+}
+
+/* =============================================
+   SRAJAN KARTA — Base Styles
+   Reset · Typography · Utilities · Keyframes
+   ============================================= */
+
+/* ---- Google Fonts ---- */
+/* ---- CSS Reset ---- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-height);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-normal);
+  color: var(--charcoal);
+  background-color: var(--cream);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition-fast);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+::selection {
+  background-color: var(--sage-200);
+  color: var(--sage-900);
+}
+
+/* ---- Global Typography ---- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-tight);
+  color: var(--sage-900);
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: var(--fs-h4); }
+
+p {
+  margin-bottom: var(--space-sm);
+  color: var(--warm-gray-700);
+  line-height: var(--lh-relaxed);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---- Layout Utilities ---- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.container--narrow {
+  max-width: var(--max-width-narrow);
+}
+
+/* ---- Section Header (Reusable) ---- */
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--space-3xl);
+}
+
+.section-tag {
+  display: inline-block;
+  font-family: var(--font-accent);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-widest);
+  text-transform: uppercase;
+  color: var(--sage-500);
+  margin-bottom: var(--space-sm);
+}
+
+.section-title {
+  font-size: var(--fs-h2);
+  color: var(--sage-900);
+  margin-bottom: var(--space-md);
+}
+
+.section-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--sage-300), var(--terracotta), var(--sage-300));
+  margin: 0 auto var(--space-md);
+  border: none;
+}
+
+.section-subtitle {
+  font-size: var(--fs-body-lg);
+  color: var(--warm-gray-500);
+  line-height: var(--lh-relaxed);
+  margin-bottom: 0;
+}
+
+/* ---- Scroll Reveal Animations ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Stagger children */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal-stagger.active > *:nth-child(1) { transition-delay: 0ms; }
+.reveal-stagger.active > *:nth-child(2) { transition-delay: 100ms; }
+.reveal-stagger.active > *:nth-child(3) { transition-delay: 200ms; }
+.reveal-stagger.active > *:nth-child(4) { transition-delay: 300ms; }
+.reveal-stagger.active > *:nth-child(5) { transition-delay: 400ms; }
+
+.reveal-stagger.active > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- Keyframes ---- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes kenBurns {
+  from { transform: scale(1); }
+  to { transform: scale(1.15); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes heroTextReveal {
+  from { opacity: 0; transform: translateY(40px); letter-spacing: 0.3em; }
+  to { opacity: 1; transform: translateY(0); letter-spacing: var(--ls-wider); }
+}
+
+/* ---- Scrollbar Styling ---- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sage-300);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sage-500);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--sage-300) var(--cream);
+}
+
+/* ---- Accessibility: Prefers Reduced Motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal,
+  .reveal-left,
+  .reveal-right {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .reveal-stagger > * {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ---- Screen Reader Only ---- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* =============================================
+   SRAJAN KARTA — Components
+   Buttons · Nav · Cards · Lightbox · Forms
+   ============================================= */
+
+/* ================================================
+   BUTTONS
+   ================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  font-family: var(--font-accent);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-small);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--terracotta), var(--terracotta-dark));
+  color: var(--warm-white);
+  box-shadow: 0 4px 15px rgba(196, 112, 75, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(196, 112, 75, 0.4);
+  background: linear-gradient(135deg, var(--terracotta-light), var(--terracotta));
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Shimmer effect on CTA */
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.btn-primary:hover::after {
+  left: 100%;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--sage-700);
+  border: 1.5px solid var(--sage-300);
+}
+
+.btn-secondary:hover {
+  background: var(--sage-50);
+  border-color: var(--sage-500);
+  transform: translateY(-2px);
+}
+
+.btn-lg {
+  padding: 18px 42px;
+  font-size: var(--fs-body);
+}
+
+.btn-sm {
+  padding: 10px 24px;
+  font-size: var(--fs-xs);
+}
+
+/* ================================================
+   NAVIGATION
+   ================================================ */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  z-index: var(--z-nav);
+  transition: all var(--transition-normal);
+}
+
+.navbar.scrolled {
+  background: rgba(250, 248, 245, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-sm);
+}
+
+.nav-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.nav-logo-text {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: var(--fw-semibold);
+  color: var(--sage-900);
+  line-height: 1;
+  letter-spacing: var(--ls-wide);
+  transition: color var(--transition-fast);
+}
+
+.hero .nav-logo-text,
+.navbar:not(.scrolled) .nav-logo-text {
+  color: var(--warm-white);
+}
+
+.navbar.scrolled .nav-logo-text {
+  color: var(--sage-900);
+}
+
+.nav-logo-tagline {
+  font-family: var(--font-accent);
+  font-size: 0.625rem;
+  letter-spacing: var(--ls-widest);
+  text-transform: uppercase;
+  color: var(--sage-300);
+  transition: color var(--transition-fast);
+}
+
+.navbar.scrolled .nav-logo-tagline {
+  color: var(--sage-500);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.nav-link {
+  font-family: var(--font-accent);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  padding: 4px 0;
+  transition: color var(--transition-fast);
+}
+
+.navbar.scrolled .nav-link {
+  color: var(--warm-gray-700);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--terracotta);
+  transition: width var(--transition-normal);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--warm-white);
+}
+
+.navbar.scrolled .nav-link:hover,
+.navbar.scrolled .nav-link.active {
+  color: var(--sage-900);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-cta {
+  padding: 10px 24px;
+  font-size: var(--fs-xs);
+}
+
+.navbar:not(.scrolled) .nav-cta {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  color: var(--warm-white);
+  box-shadow: none;
+}
+
+.navbar:not(.scrolled) .nav-cta:hover {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: none;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+  z-index: 10;
+}
+
+.mobile-menu-btn span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--warm-white);
+  border-radius: 2px;
+  transition: all var(--transition-normal);
+}
+
+.navbar.scrolled .mobile-menu-btn span {
+  background: var(--sage-900);
+}
+
+.mobile-menu-btn.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(45, 59, 45, 0.97);
+  backdrop-filter: blur(20px);
+  z-index: var(--z-mobile-menu);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-slow);
+}
+
+.mobile-menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu-link {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-medium);
+  color: var(--warm-white);
+  letter-spacing: var(--ls-wide);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all var(--transition-normal);
+}
+
+.mobile-menu.open .mobile-menu-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mobile-menu.open .mobile-menu-link:nth-child(1) { transition-delay: 100ms; }
+.mobile-menu.open .mobile-menu-link:nth-child(2) { transition-delay: 150ms; }
+.mobile-menu.open .mobile-menu-link:nth-child(3) { transition-delay: 200ms; }
+.mobile-menu.open .mobile-menu-link:nth-child(4) { transition-delay: 250ms; }
+.mobile-menu.open .mobile-menu-link:nth-child(5) { transition-delay: 300ms; }
+.mobile-menu.open .mobile-menu-link:nth-child(6) { transition-delay: 350ms; }
+
+.mobile-menu-link:hover {
+  color: var(--terracotta-light);
+}
+
+/* ================================================
+   SERVICE CARDS
+   ================================================ */
+.service-card {
+  background: var(--warm-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl) var(--space-xl);
+  text-align: center;
+  box-shadow: var(--shadow-card);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--sage-300), var(--terracotta), var(--gold));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-normal);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.service-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  background: var(--sage-50);
+  transition: all var(--transition-normal);
+}
+
+.service-card:hover .service-icon {
+  background: var(--sage-100);
+  transform: scale(1.05);
+}
+
+.service-icon svg {
+  width: 36px;
+  height: 36px;
+  stroke: var(--sage-700);
+  fill: none;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.service-title {
+  font-size: var(--fs-h4);
+  margin-bottom: var(--space-sm);
+  color: var(--sage-900);
+}
+
+.service-desc {
+  font-size: var(--fs-small);
+  color: var(--warm-gray-500);
+  line-height: var(--lh-relaxed);
+  margin-bottom: var(--space-md);
+}
+
+.service-link {
+  font-family: var(--font-accent);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  color: var(--terracotta);
+  letter-spacing: var(--ls-wide);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  transition: gap var(--transition-fast), color var(--transition-fast);
+}
+
+.service-link:hover {
+  gap: var(--space-sm);
+  color: var(--terracotta-dark);
+}
+
+/* ================================================
+   GALLERY ITEMS
+   ================================================ */
+.gallery-item {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  cursor: pointer;
+  break-inside: avoid;
+  margin-bottom: var(--space-md);
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.gallery-item.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-lg) var(--space-md);
+  background: linear-gradient(to top, rgba(45, 59, 45, 0.9) 0%, transparent 100%);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all var(--transition-normal);
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h4);
+  color: var(--warm-white);
+  margin-bottom: var(--space-2xs);
+}
+
+.gallery-category {
+  font-family: var(--font-accent);
+  font-size: var(--fs-xs);
+  color: var(--sage-200);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+}
+
+/* Filter Buttons */
+.filter-btn {
+  font-family: var(--font-accent);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-wide);
+  color: var(--warm-gray-500);
+  padding: 10px 24px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid transparent;
+  background: transparent;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  color: var(--sage-700);
+  border-color: var(--sage-200);
+}
+
+.filter-btn.active {
+  background: var(--sage-900);
+  color: var(--warm-white);
+  border-color: var(--sage-900);
+}
+
+/* ================================================
+   LIGHTBOX
+   ================================================ */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(44, 44, 44, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: var(--z-lightbox);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+}
+
+.lightbox.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-image {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  animation: scaleIn 0.3s ease;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--warm-white);
+  font-size: 2rem;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.1);
+  transition: background var(--transition-fast);
+}
+
+.lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--warm-white);
+  font-size: 1.75rem;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.1);
+  transition: background var(--transition-fast);
+}
+
+.lightbox-prev { left: 24px; }
+.lightbox-next { right: 24px; }
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.lightbox-caption {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-accent);
+  font-size: var(--fs-small);
+  color: var(--warm-gray-300);
+  letter-spacing: var(--ls-wide);
+  text-align: center;
+}
+
+/* ================================================
+   FORM INPUTS
+   ================================================ */
+.form-group {
+  position: relative;
+  margin-bottom: var(--space-lg);
+}
+
+.form-input {
+  width: 100%;
+  padding: 16px 0 8px;
+  font-size: var(--fs-body);
+  color: var(--charcoal);
+  background: transparent;
+  border-bottom: 1.5px solid var(--warm-gray-100);
+  transition: border-color var(--transition-fast);
+}
+
+.form-input:focus {
+  border-color: var(--sage-500);
+}
+
+.form-label {
+  position: absolute;
+  left: 0;
+  top: 16px;
+  font-family: var(--font-accent);
+  font-size: var(--fs-body);
+  color: var(--warm-gray-300);
+  pointer-events: none;
+  transition: all var(--transition-fast);
+}
+
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown) ~ .form-label {
+  top: -2px;
+  font-size: var(--fs-xs);
+  color: var(--sage-500);
+  letter-spacing: var(--ls-wide);
+}
+
+.form-select {
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238A8578' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0 center;
+  padding-right: 24px;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: var(--lh-relaxed);
+}
+
+.form-error {
+  display: block;
+  font-size: var(--fs-xs);
+  color: #C45050;
+  margin-top: var(--space-2xs);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.form-error.visible {
+  opacity: 1;
+}
+
+.form-input.error {
+  border-color: #C45050;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.form-submit {
+  width: 100%;
+  margin-top: var(--space-sm);
+  position: relative;
+}
+
+.form-submit .btn-loading {
+  display: none;
+}
+
+.form-submit.loading .btn-text {
+  display: none;
+}
+
+.form-submit.loading .btn-loading {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.form-success {
+  display: none;
+  text-align: center;
+  padding: var(--space-2xl);
+  animation: fadeUp 0.5s ease;
+}
+
+.form-success.visible {
+  display: block;
+}
+
+.success-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-md);
+  background: var(--sage-50);
+  color: var(--sage-700);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.form-success h4 {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h3);
+  color: var(--sage-900);
+  margin-bottom: var(--space-xs);
+}
+
+.form-success p {
+  color: var(--warm-gray-500);
+}
+
+/* ================================================
+   CONTACT INFO CARD
+   ================================================ */
+.contact-info-card {
+  background: var(--sage-900);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  color: var(--warm-white);
+  height: 100%;
+}
+
+.contact-info-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h3);
+  color: var(--warm-white);
+  margin-bottom: var(--space-xl);
+}
+
+.contact-info-item {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+  align-items: flex-start;
+}
+
+.contact-info-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+}
+
+.contact-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--sage-300);
+  fill: none;
+  stroke-width: 1.5;
+}
+
+.contact-info-item h4 {
+  font-family: var(--font-accent);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  color: var(--sage-300);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  margin-bottom: var(--space-2xs);
+}
+
+.contact-info-item p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+  margin-bottom: 0;
+}
+
+.contact-info-item a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color var(--transition-fast);
+}
+
+.contact-info-item a:hover {
+  color: var(--terracotta-light);
+}
+
+/* =============================================
+   SRAJAN KARTA — Section Layouts
+   Hero · Services · Portfolio · About · Contact · Footer
+   ============================================= */
+
+/* ================================================
+   HERO SECTION
+   ================================================ */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 700px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity var(--transition-slider);
+  will-change: transform, opacity;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  animation: kenBurns 12s ease-in-out forwards;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(45, 59, 45, 0.4) 0%,
+    rgba(45, 59, 45, 0.55) 50%,
+    rgba(45, 59, 45, 0.7) 100%
+  );
+  z-index: var(--z-hero-overlay);
+}
+
+.hero-content {
+  position: relative;
+  z-index: var(--z-hero-content);
+  text-align: center;
+  max-width: 800px;
+  padding: 0 var(--container-padding);
+}
+
+.hero-tagline {
+  display: inline-block;
+  font-family: var(--font-accent);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-widest);
+  text-transform: uppercase;
+  color: var(--sage-200);
+  margin-bottom: var(--space-md);
+  animation: fadeUp 0.8s ease 0.3s both;
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-hero);
+  font-weight: var(--fw-light);
+  color: var(--warm-white);
+  letter-spacing: var(--ls-wider);
+  margin-bottom: var(--space-lg);
+  animation: heroTextReveal 1.2s ease 0.5s both;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-subtitle {
+  font-size: var(--fs-body-lg);
+  color: rgba(255, 255, 255, 0.85);
+  line-height: var(--lh-relaxed);
+  max-width: 600px;
+  margin: 0 auto var(--space-xl);
+  animation: fadeUp 0.8s ease 0.8s both;
+}
+
+.hero-cta {
+  animation: fadeUp 0.8s ease 1s both;
+}
+
+/* Hero Controls */
+.hero-controls {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: var(--z-hero-content);
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.hero-prev,
+.hero-next {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--warm-white);
+  font-size: 1.2rem;
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-fast);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hero-prev:hover,
+.hero-next:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.hero-dots {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.hero-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.hero-dot.active {
+  background: var(--warm-white);
+  width: 28px;
+  border-radius: 5px;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: var(--z-hero-content);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  animation: fadeIn 1s ease 1.5s both;
+}
+
+.scroll-indicator span {
+  font-family: var(--font-accent);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--ls-widest);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.scroll-arrow {
+  width: 1px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+
+.scroll-arrow::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transform: translateX(-50%) rotate(45deg);
+  animation: scrollBounce 2s ease infinite;
+}
+
+/* ================================================
+   SERVICES SECTION
+   ================================================ */
+.services {
+  padding: var(--space-section) 0;
+  background: var(--cream);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+/* Make the last 2 cards centered when there are 5 */
+.services-grid .service-card:nth-child(4) {
+  grid-column: 1 / 2;
+}
+
+/* ================================================
+   PORTFOLIO SECTION
+   ================================================ */
+.portfolio {
+  padding: var(--space-section) 0;
+  background: var(--sage-50);
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-2xl);
+}
+
+.gallery-grid {
+  columns: 3;
+  column-gap: var(--space-md);
+}
+
+/* ================================================
+   ABOUT SECTION
+   ================================================ */
+.about {
+  padding: var(--space-section) 0;
+  background: var(--cream);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+}
+
+.about-image-wrapper {
+  position: relative;
+}
+
+.about-image {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  aspect-ratio: 4 / 5;
+  box-shadow: var(--shadow-lg);
+}
+
+.about-accent {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 120px;
+  height: 120px;
+  border: 2px solid var(--sage-200);
+  border-radius: var(--radius-lg);
+  z-index: -1;
+}
+
+.about-accent::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  width: 80px;
+  height: 80px;
+  background: var(--sage-50);
+  border-radius: var(--radius-lg);
+  z-index: -1;
+}
+
+.about-content .section-tag {
+  text-align: left;
+}
+
+.about-name {
+  font-size: var(--fs-h2);
+  color: var(--sage-900);
+  margin-bottom: var(--space-xs);
+}
+
+.about-role {
+  font-family: var(--font-accent);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  color: var(--terracotta);
+  letter-spacing: var(--ls-wide);
+  margin-bottom: var(--space-xl);
+}
+
+.about-bio {
+  color: var(--warm-gray-700);
+  line-height: var(--lh-relaxed);
+  margin-bottom: var(--space-md);
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--warm-gray-100);
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-semibold);
+  color: var(--sage-700);
+  line-height: 1;
+  margin-bottom: var(--space-xs);
+}
+
+.stat-label {
+  font-family: var(--font-accent);
+  font-size: var(--fs-xs);
+  color: var(--warm-gray-500);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+}
+
+/* ================================================
+   CONTACT SECTION
+   ================================================ */
+.contact {
+  padding: var(--space-section) 0;
+  background: var(--warm-white);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+.contact-form-wrapper {
+  padding: var(--space-2xl);
+  background: var(--cream);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+/* ================================================
+   FOOTER
+   ================================================ */
+.footer {
+  background: var(--sage-900);
+  color: var(--warm-white);
+  padding-top: var(--space-3xl);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: var(--space-2xl);
+  padding-bottom: var(--space-3xl);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-semibold);
+  color: var(--warm-white);
+  margin-bottom: var(--space-xs);
+}
+
+.footer-tagline {
+  font-family: var(--font-accent);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--ls-widest);
+  text-transform: uppercase;
+  color: var(--sage-300);
+  margin-bottom: var(--space-md);
+}
+
+.footer-desc {
+  font-size: var(--fs-small);
+  color: rgba(255, 255, 255, 0.6);
+  line-height: var(--lh-relaxed);
+  margin-bottom: var(--space-lg);
+}
+
+.footer-social {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.08);
+  transition: all var(--transition-fast);
+}
+
+.social-link:hover {
+  background: var(--terracotta);
+  transform: translateY(-2px);
+}
+
+.social-link svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--warm-white);
+}
+
+.footer-heading {
+  font-family: var(--font-accent);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-semibold);
+  color: var(--warm-white);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  margin-bottom: var(--space-lg);
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.footer-nav a {
+  font-size: var(--fs-small);
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--transition-fast), padding-left var(--transition-fast);
+}
+
+.footer-nav a:hover {
+  color: var(--terracotta-light);
+  padding-left: 4px;
+}
+
+.footer-contact p {
+  font-size: var(--fs-small);
+  color: rgba(255, 255, 255, 0.6);
+  line-height: var(--lh-relaxed);
+  margin-bottom: var(--space-xs);
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-lg) 0;
+}
+
+.footer-bottom p {
+  font-size: var(--fs-small);
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 0;
+}
+
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.1rem;
+  transition: all var(--transition-fast);
+}
+
+.back-to-top:hover {
+  border-color: var(--terracotta);
+  color: var(--terracotta-light);
+  transform: translateY(-2px);
+}
+
+/* =============================================
+   SRAJAN KARTA — Responsive Breakpoints
+   Desktop-first: 1024px · 768px · 480px
+   ============================================= */
+
+/* ================================================
+   SMALL DESKTOP / TABLET LANDSCAPE (≤ 1024px)
+   ================================================ */
+@media (max-width: 1024px) {
+  :root {
+    --nav-height: 72px;
+  }
+
+  /* Navigation */
+  .nav-links {
+    display: none;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  /* Services */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+
+  .services-grid .service-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  /* Portfolio */
+  .gallery-grid {
+    columns: 2;
+  }
+
+  /* About */
+  .about-grid {
+    gap: var(--space-2xl);
+  }
+
+  /* Contact */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+  }
+}
+
+/* ================================================
+   TABLET PORTRAIT (≤ 768px)
+   ================================================ */
+@media (max-width: 768px) {
+  :root {
+    --space-section: 4rem;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 600px;
+  }
+
+  .hero-controls {
+    bottom: 24px;
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+
+  /* Services */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .services-grid .service-card:last-child {
+    max-width: none;
+  }
+
+  /* Portfolio */
+  .gallery-grid {
+    columns: 2;
+    column-gap: var(--space-sm);
+  }
+
+  .filter-bar {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: var(--space-xs);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* About */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .about-image-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .about-content .section-tag {
+    text-align: center;
+  }
+
+  .about-accent {
+    display: none;
+  }
+
+  /* Contact */
+  .contact-form-wrapper {
+    padding: var(--space-xl);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-nav {
+    align-items: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  /* Section Headers */
+  .section-header {
+    margin-bottom: var(--space-2xl);
+  }
+
+  /* Lightbox */
+  .lightbox-prev,
+  .lightbox-next {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+  }
+
+  .lightbox-prev { left: 12px; }
+  .lightbox-next { right: 12px; }
+
+  .lightbox-close {
+    top: 12px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* ================================================
+   MOBILE (≤ 480px)
+   ================================================ */
+@media (max-width: 480px) {
+  :root {
+    --nav-height: 64px;
+    --space-section: 3.5rem;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 500px;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 3rem);
+    letter-spacing: var(--ls-wide);
+  }
+
+  .hero-subtitle {
+    font-size: var(--fs-body);
+  }
+
+  .hero-cta {
+    padding: 14px 28px;
+    font-size: var(--fs-small);
+  }
+
+  .hero-controls {
+    bottom: 16px;
+    gap: var(--space-sm);
+  }
+
+  .hero-prev,
+  .hero-next {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  /* Nav */
+  .nav-logo-text {
+    font-size: 1.3rem;
+  }
+
+  .nav-logo-tagline {
+    font-size: 0.55rem;
+  }
+
+  /* Services */
+  .service-card {
+    padding: var(--space-xl) var(--space-md);
+  }
+
+  /* Portfolio */
+  .gallery-grid {
+    columns: 1;
+  }
+
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: var(--fs-xs);
+  }
+
+  /* About */
+  .about-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-sm);
+  }
+
+  .stat-number {
+    font-size: var(--fs-h3);
+  }
+
+  .stat-label {
+    font-size: 0.65rem;
+  }
+
+  /* Contact */
+  .contact-form-wrapper {
+    padding: var(--space-md);
+  }
+
+  .contact-info-card {
+    padding: var(--space-xl);
+  }
+
+  .btn-lg {
+    padding: 14px 28px;
+    font-size: var(--fs-small);
+  }
+
+  /* Lightbox */
+  .lightbox-image {
+    max-width: 95vw;
+    max-height: 80vh;
+    border-radius: var(--radius-sm);
+  }
+
+  .lightbox-prev,
+  .lightbox-next {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .lightbox-prev { left: 8px; }
+  .lightbox-next { right: 8px; }
+}
+
+/* ================================================
+   LARGE SCREENS (≥ 1440px)
+   ================================================ */
+@media (min-width: 1440px) {
+  .hero-content {
+    max-width: 900px;
+  }
+
+  .services-grid {
+    gap: var(--space-xl);
+  }
+
+  .gallery-grid {
+    columns: 4;
+  }
+}
+
+/* ================================================
+   TOUCH DEVICE ADJUSTMENTS
+   ================================================ */
+@media (hover: none) {
+  /* Show overlays by default on touch devices */
+  .gallery-overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Disable hover transforms */
+  .service-card:hover {
+    transform: none;
+  }
+
+  .btn-primary:hover {
+    transform: none;
+  }
+}
+
+</style>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="nav-logo-text">Srajan Karta</span>
+        <span class="nav-logo-tagline">Design &#8226; Nature &#8226; Harmony</span>
+      </a>
+      <div class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <a href="#contact" class="nav-cta btn btn-primary">Book Consultation</a>
+      <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#home" class="mobile-menu-link">Home</a>
+    <a href="#services" class="mobile-menu-link">Services</a>
+    <a href="#portfolio" class="mobile-menu-link">Portfolio</a>
+    <a href="#about" class="mobile-menu-link">About</a>
+    <a href="#contact" class="mobile-menu-link">Contact</a>
+    <a href="#contact" class="btn btn-primary" style="margin-top:1rem;">Book Consultation</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-slider">
+      <div class="hero-slide active" style="background-image:url('images/hero-interior.png')"></div>
+      <div class="hero-slide" style="background-image:url('images/hero-miniature.png')"></div>
+      <div class="hero-slide" style="background-image:url('images/hero-terrarium.png')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-tagline">Welcome to Srajan Karta</span>
+      <h1 class="hero-title">Design &#8226; Nature &#8226; Harmony</h1>
+      <p class="hero-subtitle">We craft thoughtful interiors that breathe with nature &#8212; blending functional design, living greenery, and artistic landscapes to create spaces that inspire calm and wonder.</p>
+      <a href="#contact" class="btn btn-primary btn-lg hero-cta">Book a Consultation</a>
+    </div>
+    <div class="hero-controls">
+      <button class="hero-prev" aria-label="Previous slide">&#8592;</button>
+      <div class="hero-dots">
+        <button class="hero-dot active" aria-label="Slide 1"></button>
+        <button class="hero-dot" aria-label="Slide 2"></button>
+        <button class="hero-dot" aria-label="Slide 3"></button>
+      </div>
+      <button class="hero-next" aria-label="Next slide">&#8594;</button>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What We Offer</span>
+        <h2 class="section-title">Our Services</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">From reimagining your interiors to bringing nature indoors &#8212; we offer a holistic approach to designing spaces that are both beautiful and harmonious.</p>
+      </div>
+      <div class="services-grid reveal-stagger">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 class="service-title">Interior Designing</h3>
+          <p class="service-desc">Complete residential and commercial interior solutions &#8212; from concept to execution. We create 2D/3D layouts using AutoCAD and SketchUp that maximize functionality while reflecting your personality.</p>
+          <a href="#contact" class="service-link">Learn More &#8594;</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M7 20l4-16m2 16l4-16M3 8h18M3 16h18"/></svg>
+          </div>
+          <h3 class="service-title">Plant Styling</h3>
+          <p class="service-desc">Transform your spaces with expertly curated indoor greenery. We select, arrange, and maintain living plants tailored to your space, light conditions, and aesthetic preferences.</p>
+          <a href="#contact" class="service-link">Learn More &#8594;</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M2 22L12 2l10 20H2z"/><path d="M7 22l3-5 2 3 3-6 3 8"/><circle cx="18" cy="6" r="2"/></svg>
+          </div>
+          <h3 class="service-title">Miniature Landscape</h3>
+          <p class="service-desc">Handcrafted miniature worlds that capture nature's essence in stunning detail. Each piece is a unique work of art &#8212; from zen gardens to fairy forests &#8212; perfect as decor or meaningful gifts.</p>
+          <a href="#contact" class="service-link">Learn More &#8594;</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z"/><path d="M12 22V12"/><path d="M2 7l10 5 10-5"/><circle cx="12" cy="15" r="2"/></svg>
+          </div>
+          <h3 class="service-title">Terrariums</h3>
+          <p class="service-desc">Self-sustaining ecosystems enclosed in elegant glass vessels. Our terrariums are living art pieces that bring a touch of wilderness to any desk, shelf, or tabletop with minimal maintenance.</p>
+          <a href="#contact" class="service-link">Learn More &#8594;</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2v20"/><path d="M2 12h20"/><path d="M12 7l5 5-5 5-5-5z"/></svg>
+          </div>
+          <h3 class="service-title">Vastu Shastra</h3>
+          <p class="service-desc">Align your living and working spaces with ancient Vastu principles for positive energy flow. We integrate traditional wisdom with modern design to create balanced, harmonious environments.</p>
+          <a href="#contact" class="service-link">Learn More &#8594;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Our Work</span>
+        <h2 class="section-title">Portfolio</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Explore our collection of completed projects &#8212; from interior transformations to handcrafted nature art pieces.</p>
+      </div>
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="interior">Interior Design</button>
+        <button class="filter-btn" data-filter="plant">Plant Styling</button>
+        <button class="filter-btn" data-filter="terrarium">Terrariums</button>
+        <button class="filter-btn" data-filter="miniature">Miniature Landscapes</button>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="interior">
+          <img src="images/portfolio-living-room.png" alt="Modern Living Room Design" loading="lazy">
+          <div class="gallery-overlay"><h4 class="gallery-title">Modern Living Room</h4><span class="gallery-category">Interior Design</span></div>
+        </div>
+        <div class="gallery-item" data-category="terrarium">
+          <img src="images/portfolio-terrarium-collection.png" alt="Terrarium Collection" loading="lazy">
+          <div class="gallery-overlay"><h4 class="gallery-title">Terrarium Collection</h4><span class="gallery-category">Terrariums</span></div>
+        </div>
+        <div class="gallery-item" data-category="interior">
+          <img src="images/portfolio-bedroom.png" alt="Luxury Bedroom Suite" loading="lazy">
+          <div class="gallery-overlay"><h4 class="gallery-title">Serene Bedroom Suite</h4><span class="gallery-category">Interior Design</span></div>
+        </div>
+        <div class="gallery-item" data-category="plant">
+          <img src="images/portfolio-plant-styling.png" alt="Indoor Plant Corner" loading="lazy">
+          <div class="gallery-overlay"><h4 class="gallery-title">Tropical Plant Corner</h4><span class="gallery-category">Plant Styling</span></div>
+        </div>
+        <div class="gallery-item" data-category="miniature">
+          <img src="images/portfolio-miniature.png" alt="Zen Garden Miniature" loading="lazy">
+          <div class="gallery-overlay"><h4 class="gallery-title">Zen Garden Miniature</h4><span class="gallery-category">Miniature Landscape</span></div>
+        </div>
+        <div class="gallery-item" data-category="interior">
+          <img src="images/portfolio-kitchen.png" alt="Modern Kitchen Design" loading="lazy">
+          <div class="gallery-overlay"><h4 class="gallery-title">Organic Kitchen Design</h4><span class="gallery-category">Interior Design</span></div>
+        </div>
+        <div class="gallery-item" data-category="terrarium">
+          <img src="images/portfolio-terrarium-single.png" alt="Forest Ecosystem Terrarium" loading="lazy">
+          <div class="gallery-overlay"><h4 class="gallery-title">Forest Ecosystem Terrarium</h4><span class="gallery-category">Terrariums</span></div>
+        </div>
+        <div class="gallery-item" data-category="interior">
+          <img src="images/portfolio-office.png" alt="Home Office Design" loading="lazy">
+          <div class="gallery-overlay"><h4 class="gallery-title">Home Office Retreat</h4><span class="gallery-category">Interior Design</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">&#215;</button>
+    <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
+    <button class="lightbox-next" aria-label="Next">&#8250;</button>
+    <img class="lightbox-image" src="" alt="">
+    <div class="lightbox-caption"></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal-left">
+          <img class="about-image" src="images/designer-portrait.png" alt="Isha Verma - Interior Designer">
+          <div class="about-accent"></div>
+        </div>
+        <div class="about-content reveal-right">
+          <span class="section-tag">Meet the Designer</span>
+          <h2 class="about-name">Isha Verma</h2>
+          <h3 class="about-role">Interior Designer &amp; Nature Artist</h3>
+          <p class="about-bio">With a deep passion for merging functional design with the organic beauty of nature, Isha Verma founded Srajan Karta to create spaces that truly live and breathe. Her philosophy is simple &#8212; every space tells a story, and every story deserves to be told beautifully.</p>
+          <p class="about-bio">Armed with expertise in AutoCAD and SketchUp for precision layouts and an artist's eye for living decor, Isha brings a rare blend of technical skill and creative vision to every project. From luxury residential interiors to intricate miniature landscapes, her work reflects a commitment to harmony between human spaces and the natural world.</p>
+          <p class="about-bio">Based in Bhopal, she works with clients who value spaces that are not just designed, but thoughtfully crafted &#8212; places where you can feel the intention in every corner, every plant, and every ray of light.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-number">8+</span><span class="stat-label">Years Experience</span></div>
+            <div class="stat"><span class="stat-number">150+</span><span class="stat-label">Projects Done</span></div>
+            <div class="stat"><span class="stat-number">200+</span><span class="stat-label">Happy Clients</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Let's Create Together</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Ready to transform your space? Share your vision with us and let's bring it to life &#8212; naturally.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-form-wrapper reveal-left">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="name" class="form-input" placeholder=" " required autocomplete="name">
+                <label for="name" class="form-label">Full Name</label>
+                <span class="form-error"></span>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" class="form-input" placeholder=" " required autocomplete="email">
+                <label for="email" class="form-label">Email Address</label>
+                <span class="form-error"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <input type="tel" id="phone" class="form-input" placeholder=" " autocomplete="tel">
+                <label for="phone" class="form-label">Phone Number</label>
+                <span class="form-error"></span>
+              </div>
+              <div class="form-group">
+                <select id="service" class="form-input form-select" required>
+                  <option value="" disabled selected></option>
+                  <option value="interior">Interior Designing</option>
+                  <option value="plant">Plant Styling</option>
+                  <option value="miniature">Miniature Landscape</option>
+                  <option value="terrarium">Terrariums</option>
+                  <option value="vastu">Vastu Shastra</option>
+                </select>
+                <label for="service" class="form-label">Service Interest</label>
+                <span class="form-error"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea id="message" class="form-input form-textarea" placeholder=" " rows="5" required></textarea>
+              <label for="message" class="form-label">Tell us about your project</label>
+              <span class="form-error"></span>
+            </div>
+            <div class="form-group" style="position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden;" aria-hidden="true">
+              <input type="text" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg form-submit">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loading">Sending...</span>
+            </button>
+            <div class="form-success">
+              <div class="success-icon">&#10003;</div>
+              <h4>Message Sent Successfully!</h4>
+              <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+            </div>
+          </form>
+        </div>
+        <div class="contact-info reveal-right">
+          <div class="contact-info-card">
+            <h3 class="contact-info-title">Contact Information</h3>
+            <div class="contact-info-item">
+              <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+              <div><h4>Phone</h4><p><a href="tel:+919399577651">+91 93995 77651</a></p></div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div><h4>Location</h4><p>Emerald Park City,<br>Bagsevaniya, Bhopal, MP</p></div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+              <div><h4>Instagram</h4><p><a href="https://instagram.com/srajankarta" target="_blank" rel="noopener">@srajankarta</a></p></div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+              <div><h4>Working Hours</h4><p>Mon &#8211; Sat: 10 AM &#8211; 7 PM</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <h3 class="footer-logo">Srajan Karta</h3>
+          <p class="footer-tagline">Design &#8226; Nature &#8226; Harmony</p>
+          <p class="footer-desc">Transforming spaces with thoughtful interior design and the beauty of nature. Creating environments that inspire calm, wonder, and well-being.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/srajankarta" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="1.5"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="1.5"/></svg>
+            </a>
+            <a href="tel:+919399577651" class="social-link" aria-label="Call us">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <nav class="footer-nav">
+            <a href="#home">Home</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#about">About</a><a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Services</h4>
+          <nav class="footer-nav">
+            <a href="#services">Interior Designing</a><a href="#services">Plant Styling</a><a href="#services">Miniature Landscape</a><a href="#services">Terrariums</a><a href="#services">Vastu Shastra</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact</h4>
+          <div class="footer-contact">
+            <p>+91 93995 77651</p>
+            <p>Emerald Park City, Bagsevaniya, Bhopal, MP</p>
+            <p>hello@srajankarta.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&#169; 2026 Srajan Karta. All rights reserved.</p>
+        <a href="#home" class="back-to-top" aria-label="Back to top">&#8593;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+/* =============================================
+   SRAJAN KARTA — Main Application
+   Navbar · Smooth Scroll · Scroll Reveal · Mobile Menu
+   ============================================= */
+
+document.addEventListener('DOMContentLoaded', () => {
+  initNavbar();
+  initSmoothScroll();
+  initScrollReveal();
+  initMobileMenu();
+  initActiveNavLink();
+});
+
+/* ================================================
+   NAVBAR SCROLL BEHAVIOR
+   ================================================ */
+function initNavbar() {
+  const navbar = document.querySelector('.navbar');
+  if (!navbar) return;
+
+  let lastScroll = 0;
+  const scrollThreshold = 50;
+
+  function handleScroll() {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > scrollThreshold) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+
+    lastScroll = currentScroll;
+  }
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  handleScroll(); // Initial check
+}
+
+/* ================================================
+   SMOOTH SCROLL TO SECTIONS
+   ================================================ */
+function initSmoothScroll() {
+  const links = document.querySelectorAll('a[href^="#"]');
+
+  links.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const targetId = link.getAttribute('href');
+      if (targetId === '#') return;
+
+      const targetElement = document.querySelector(targetId);
+      if (!targetElement) return;
+
+      e.preventDefault();
+
+      // Close mobile menu if open
+      const mobileMenu = document.querySelector('.mobile-menu');
+      const menuBtn = document.querySelector('.mobile-menu-btn');
+      if (mobileMenu && mobileMenu.classList.contains('open')) {
+        mobileMenu.classList.remove('open');
+        menuBtn.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      const navHeight = parseInt(getComputedStyle(document.documentElement)
+        .getPropertyValue('--nav-height')) || 80;
+
+      const targetPosition = targetElement.getBoundingClientRect().top
+        + window.scrollY - navHeight;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    });
+  });
+}
+
+/* ================================================
+   SCROLL REVEAL ANIMATIONS
+   ================================================ */
+function initScrollReveal() {
+  const revealElements = document.querySelectorAll(
+    '.reveal, .reveal-left, .reveal-right, .reveal-stagger'
+  );
+
+  if (revealElements.length === 0) return;
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px 0px -80px 0px',
+    threshold: 0.15
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target); // Animate only once
+      }
+    });
+  }, observerOptions);
+
+  revealElements.forEach(el => observer.observe(el));
+}
+
+/* ================================================
+   MOBILE MENU TOGGLE
+   ================================================ */
+function initMobileMenu() {
+  const menuBtn = document.querySelector('.mobile-menu-btn');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  if (!menuBtn || !mobileMenu) return;
+
+  menuBtn.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    menuBtn.classList.toggle('active');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  // Close on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+      mobileMenu.classList.remove('open');
+      menuBtn.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+}
+
+/* ================================================
+   ACTIVE NAV LINK ON SCROLL
+   ================================================ */
+function initActiveNavLink() {
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  if (sections.length === 0 || navLinks.length === 0) return;
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '-40% 0px -60% 0px',
+    threshold: 0
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${id}`) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }, observerOptions);
+
+  sections.forEach(section => observer.observe(section));
+}
+
+/* =============================================
+   SRAJAN KARTA — Hero Image Slider
+   Crossfade with Ken Burns Effect
+   ============================================= */
+
+class HeroSlider {
+  constructor() {
+    this.slides = document.querySelectorAll('.hero-slide');
+    this.dots = document.querySelectorAll('.hero-dot');
+    this.prevBtn = document.querySelector('.hero-prev');
+    this.nextBtn = document.querySelector('.hero-next');
+
+    if (this.slides.length === 0) return;
+
+    this.currentIndex = 0;
+    this.slideCount = this.slides.length;
+    this.autoplayInterval = null;
+    this.autoplayDelay = 6000;
+    this.isTransitioning = false;
+
+    this.init();
+  }
+
+  init() {
+    // Set up controls
+    if (this.prevBtn) {
+      this.prevBtn.addEventListener('click', () => this.prev());
+    }
+    if (this.nextBtn) {
+      this.nextBtn.addEventListener('click', () => this.next());
+    }
+
+    // Dot navigation
+    this.dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => this.goTo(index));
+    });
+
+    // Touch support
+    this.initTouchSupport();
+
+    // Pause on hover
+    const hero = document.querySelector('.hero');
+    if (hero) {
+      hero.addEventListener('mouseenter', () => this.pause());
+      hero.addEventListener('mouseleave', () => this.play());
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      const hero = document.querySelector('.hero');
+      if (!hero) return;
+      const rect = hero.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+      if (isVisible) {
+        if (e.key === 'ArrowLeft') this.prev();
+        if (e.key === 'ArrowRight') this.next();
+      }
+    });
+
+    // Start autoplay
+    this.play();
+  }
+
+  goTo(index) {
+    if (this.isTransitioning || index === this.currentIndex) return;
+    this.isTransitioning = true;
+
+    // Reset Ken Burns on current slide
+    this.slides[this.currentIndex].classList.remove('active');
+    this.slides[this.currentIndex].style.animation = 'none';
+
+    // Activate new slide
+    this.currentIndex = index;
+    const currentSlide = this.slides[this.currentIndex];
+    currentSlide.style.animation = 'none';
+
+    // Force reflow to restart animation
+    void currentSlide.offsetWidth;
+
+    currentSlide.classList.add('active');
+    currentSlide.style.animation = '';
+
+    // Update dots
+    this.dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === this.currentIndex);
+    });
+
+    // Reset autoplay
+    this.pause();
+    this.play();
+
+    setTimeout(() => {
+      this.isTransitioning = false;
+    }, 1200);
+  }
+
+  next() {
+    const nextIndex = (this.currentIndex + 1) % this.slideCount;
+    this.goTo(nextIndex);
+  }
+
+  prev() {
+    const prevIndex = (this.currentIndex - 1 + this.slideCount) % this.slideCount;
+    this.goTo(prevIndex);
+  }
+
+  play() {
+    this.pause();
+    this.autoplayInterval = setInterval(() => this.next(), this.autoplayDelay);
+  }
+
+  pause() {
+    if (this.autoplayInterval) {
+      clearInterval(this.autoplayInterval);
+      this.autoplayInterval = null;
+    }
+  }
+
+  initTouchSupport() {
+    const hero = document.querySelector('.hero');
+    if (!hero) return;
+
+    let startX = 0;
+    let endX = 0;
+    const minSwipeDistance = 50;
+
+    hero.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+    }, { passive: true });
+
+    hero.addEventListener('touchend', (e) => {
+      endX = e.changedTouches[0].clientX;
+      const diff = startX - endX;
+
+      if (Math.abs(diff) >= minSwipeDistance) {
+        if (diff > 0) {
+          this.next();
+        } else {
+          this.prev();
+        }
+      }
+    }, { passive: true });
+  }
+}
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+  new HeroSlider();
+});
+
+/* =============================================
+   SRAJAN KARTA — Gallery & Lightbox
+   Masonry Layout · Category Filters · Lightbox Modal
+   ============================================= */
+
+class Gallery {
+  constructor() {
+    this.filterBtns = document.querySelectorAll('.filter-btn');
+    this.galleryItems = document.querySelectorAll('.gallery-item');
+    this.lightbox = document.getElementById('lightbox');
+    this.lightboxImage = document.querySelector('.lightbox-image');
+    this.lightboxCaption = document.querySelector('.lightbox-caption');
+    this.lightboxClose = document.querySelector('.lightbox-close');
+    this.lightboxPrev = document.querySelector('.lightbox-prev');
+    this.lightboxNext = document.querySelector('.lightbox-next');
+
+    this.currentFilter = 'all';
+    this.currentLightboxIndex = 0;
+    this.visibleItems = [];
+
+    if (this.galleryItems.length === 0) return;
+
+    this.init();
+  }
+
+  init() {
+    // Show all items initially
+    this.filterItems('all');
+
+    // Filter buttons
+    this.filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+        this.filterItems(filter);
+
+        // Update active button
+        this.filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+
+    // Lightbox click handlers
+    this.galleryItems.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        this.openLightbox(item);
+      });
+    });
+
+    // Lightbox controls
+    if (this.lightboxClose) {
+      this.lightboxClose.addEventListener('click', () => this.closeLightbox());
+    }
+    if (this.lightboxPrev) {
+      this.lightboxPrev.addEventListener('click', () => this.prevImage());
+    }
+    if (this.lightboxNext) {
+      this.lightboxNext.addEventListener('click', () => this.nextImage());
+    }
+
+    // Close lightbox on background click
+    if (this.lightbox) {
+      this.lightbox.addEventListener('click', (e) => {
+        if (e.target === this.lightbox) {
+          this.closeLightbox();
+        }
+      });
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (!this.lightbox || !this.lightbox.classList.contains('open')) return;
+
+      switch (e.key) {
+        case 'Escape':
+          this.closeLightbox();
+          break;
+        case 'ArrowLeft':
+          this.prevImage();
+          break;
+        case 'ArrowRight':
+          this.nextImage();
+          break;
+      }
+    });
+  }
+
+  filterItems(filter) {
+    this.currentFilter = filter;
+
+    this.galleryItems.forEach((item, index) => {
+      const category = item.getAttribute('data-category');
+      const shouldShow = filter === 'all' || category === filter;
+
+      if (shouldShow) {
+        // Stagger the appearance
+        setTimeout(() => {
+          item.style.display = '';
+          // Force reflow
+          void item.offsetWidth;
+          item.classList.add('show');
+        }, index * 50);
+      } else {
+        item.classList.remove('show');
+        setTimeout(() => {
+          item.style.display = 'none';
+        }, 400);
+      }
+    });
+
+    // Update visible items array for lightbox navigation
+    setTimeout(() => {
+      this.visibleItems = Array.from(this.galleryItems).filter(item => {
+        return item.classList.contains('show');
+      });
+    }, 500);
+  }
+
+  openLightbox(item) {
+    if (!this.lightbox || !this.lightboxImage) return;
+
+    const img = item.querySelector('img');
+    const titleEl = item.querySelector('.gallery-title');
+    const categoryEl = item.querySelector('.gallery-category');
+
+    if (img) {
+      this.lightboxImage.src = img.src;
+      this.lightboxImage.alt = img.alt;
+    }
+
+    if (this.lightboxCaption) {
+      const title = titleEl ? titleEl.textContent : '';
+      const category = categoryEl ? categoryEl.textContent : '';
+      this.lightboxCaption.textContent = title + (category ? ' — ' + category : '');
+    }
+
+    // Find index in visible items
+    this.currentLightboxIndex = this.visibleItems.indexOf(item);
+
+    this.lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  closeLightbox() {
+    if (!this.lightbox) return;
+    this.lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  prevImage() {
+    if (this.visibleItems.length === 0) return;
+    this.currentLightboxIndex = (this.currentLightboxIndex - 1 + this.visibleItems.length) % this.visibleItems.length;
+    this.updateLightboxImage();
+  }
+
+  nextImage() {
+    if (this.visibleItems.length === 0) return;
+    this.currentLightboxIndex = (this.currentLightboxIndex + 1) % this.visibleItems.length;
+    this.updateLightboxImage();
+  }
+
+  updateLightboxImage() {
+    const item = this.visibleItems[this.currentLightboxIndex];
+    if (!item) return;
+
+    const img = item.querySelector('img');
+    const titleEl = item.querySelector('.gallery-title');
+    const categoryEl = item.querySelector('.gallery-category');
+
+    // Animate image change
+    this.lightboxImage.style.opacity = '0';
+    this.lightboxImage.style.transform = 'scale(0.95)';
+
+    setTimeout(() => {
+      if (img) {
+        this.lightboxImage.src = img.src;
+        this.lightboxImage.alt = img.alt;
+      }
+
+      if (this.lightboxCaption) {
+        const title = titleEl ? titleEl.textContent : '';
+        const category = categoryEl ? categoryEl.textContent : '';
+        this.lightboxCaption.textContent = title + (category ? ' — ' + category : '');
+      }
+
+      this.lightboxImage.style.opacity = '1';
+      this.lightboxImage.style.transform = 'scale(1)';
+    }, 200);
+  }
+}
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+  new Gallery();
+});
+
+/* =============================================
+   SRAJAN KARTA — Contact Form
+   Floating Labels · Validation · Honeypot Spam Prevention
+   ============================================= */
+
+class ContactForm {
+  constructor() {
+    this.form = document.getElementById('contact-form');
+    if (!this.form) return;
+
+    this.submitBtn = this.form.querySelector('.form-submit');
+    this.successMsg = this.form.querySelector('.form-success');
+    this.formFields = this.form.querySelectorAll('.form-input');
+
+    this.validators = {
+      name: {
+        validate: (value) => value.trim().length >= 2,
+        message: 'Please enter your full name (at least 2 characters)'
+      },
+      email: {
+        validate: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value),
+        message: 'Please enter a valid email address'
+      },
+      phone: {
+        validate: (value) => {
+          if (!value.trim()) return true; // Phone is optional
+          return /^[\+]?[\d\s\-\(\)]{7,15}$/.test(value.trim());
+        },
+        message: 'Please enter a valid phone number'
+      },
+      service: {
+        validate: (value) => value.trim().length > 0,
+        message: 'Please select a service you\'re interested in'
+      },
+      message: {
+        validate: (value) => value.trim().length >= 10,
+        message: 'Please enter a message (at least 10 characters)'
+      }
+    };
+
+    this.init();
+  }
+
+  init() {
+    // Real-time validation on blur
+    this.formFields.forEach(field => {
+      field.addEventListener('blur', () => {
+        this.validateField(field);
+      });
+
+      // Clear error on input
+      field.addEventListener('input', () => {
+        this.clearFieldError(field);
+      });
+    });
+
+    // Form submission
+    this.form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      this.handleSubmit();
+    });
+  }
+
+  validateField(field) {
+    const fieldId = field.id;
+    const validator = this.validators[fieldId];
+
+    if (!validator) return true;
+
+    const value = field.value;
+    const isValid = validator.validate(value);
+
+    if (!isValid) {
+      this.showFieldError(field, validator.message);
+      return false;
+    } else {
+      this.clearFieldError(field);
+      return true;
+    }
+  }
+
+  showFieldError(field, message) {
+    const formGroup = field.closest('.form-group');
+    if (!formGroup) return;
+
+    const errorEl = formGroup.querySelector('.form-error');
+    field.classList.add('error');
+
+    if (errorEl) {
+      errorEl.textContent = message;
+      errorEl.classList.add('visible');
+    }
+  }
+
+  clearFieldError(field) {
+    const formGroup = field.closest('.form-group');
+    if (!formGroup) return;
+
+    const errorEl = formGroup.querySelector('.form-error');
+    field.classList.remove('error');
+
+    if (errorEl) {
+      errorEl.classList.remove('visible');
+    }
+  }
+
+  handleSubmit() {
+    // Check honeypot
+    const honeypot = this.form.querySelector('input[name="website"]');
+    if (honeypot && honeypot.value) {
+      // Bot detected — silently fail
+      this.showSuccess();
+      return;
+    }
+
+    // Validate all fields
+    let isValid = true;
+    const requiredFields = this.form.querySelectorAll('.form-input[required]');
+
+    requiredFields.forEach(field => {
+      if (!this.validateField(field)) {
+        isValid = false;
+      }
+    });
+
+    // Also validate optional fields that have values
+    const optionalFields = this.form.querySelectorAll('.form-input:not([required])');
+    optionalFields.forEach(field => {
+      if (field.value.trim() && !this.validateField(field)) {
+        isValid = false;
+      }
+    });
+
+    if (!isValid) {
+      // Scroll to first error
+      const firstError = this.form.querySelector('.form-input.error');
+      if (firstError) {
+        firstError.focus();
+      }
+      return;
+    }
+
+    // Show loading state
+    this.submitBtn.classList.add('loading');
+    this.submitBtn.disabled = true;
+
+    // Simulate form submission (replace with actual API call)
+    setTimeout(() => {
+      this.showSuccess();
+    }, 1500);
+  }
+
+  showSuccess() {
+    // Hide form fields
+    const formGroups = this.form.querySelectorAll('.form-group, .form-row, .form-submit');
+    formGroups.forEach(group => {
+      group.style.display = 'none';
+    });
+
+    // Show success message
+    if (this.successMsg) {
+      this.successMsg.classList.add('visible');
+    }
+
+    // Reset form after delay
+    setTimeout(() => {
+      this.resetForm();
+    }, 5000);
+  }
+
+  resetForm() {
+    this.form.reset();
+
+    const formGroups = this.form.querySelectorAll('.form-group, .form-row, .form-submit');
+    formGroups.forEach(group => {
+      group.style.display = '';
+    });
+
+    if (this.successMsg) {
+      this.successMsg.classList.remove('visible');
+    }
+
+    if (this.submitBtn) {
+      this.submitBtn.classList.remove('loading');
+      this.submitBtn.disabled = false;
+    }
+
+    // Clear all errors
+    this.formFields.forEach(field => this.clearFieldError(field));
+  }
+}
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+  new ContactForm();
+});
+
+</script>
+</body>
+</html>
