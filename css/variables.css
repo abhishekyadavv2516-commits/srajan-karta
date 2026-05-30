@@ -1,0 +1,125 @@
+/* =============================================
+   SRAJAN KARTA — Design Tokens
+   Design • Nature • Harmony
+   ============================================= */
+
+:root {
+  /* ---- Color Palette: Sage Greens ---- */
+  --sage-900: #2D3B2D;
+  --sage-800: #3A4F3A;
+  --sage-700: #4A6741;
+  --sage-600: #5A7D52;
+  --sage-500: #6B8F71;
+  --sage-400: #8BAF84;
+  --sage-300: #A8C5A0;
+  --sage-200: #C5D9BF;
+  --sage-100: #D4E4D1;
+  --sage-50: #EEF4ED;
+
+  /* ---- Color Palette: Warm Neutrals ---- */
+  --cream: #FAF8F5;
+  --cream-dark: #F0EDE8;
+  --warm-white: #FDFCFA;
+  --beige: #E8E2D9;
+  --sand: #D4CCC0;
+
+  /* ---- Color Palette: Accent (Terracotta) ---- */
+  --terracotta: #C4704B;
+  --terracotta-dark: #A85D3B;
+  --terracotta-light: #E8A07A;
+
+  /* ---- Color Palette: Text / Grays ---- */
+  --charcoal: #2C2C2C;
+  --warm-gray-900: #3D3A36;
+  --warm-gray-700: #5C5750;
+  --warm-gray-500: #8A8578;
+  --warm-gray-300: #B8B3AA;
+  --warm-gray-100: #E8E5E0;
+
+  /* ---- Color Palette: Luxury Accent ---- */
+  --gold: #B8934B;
+  --gold-light: #D4B06A;
+
+  /* ---- Typography: Families ---- */
+  --font-heading: 'Cormorant Garamond', 'Georgia', serif;
+  --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-accent: 'Outfit', 'Arial', sans-serif;
+
+  /* ---- Typography: Sizes (Fluid) ---- */
+  --fs-hero: clamp(3rem, 6vw, 5.5rem);
+  --fs-h1: clamp(2.5rem, 4vw, 4rem);
+  --fs-h2: clamp(2rem, 3.5vw, 3rem);
+  --fs-h3: clamp(1.5rem, 2.5vw, 2rem);
+  --fs-h4: clamp(1.125rem, 1.5vw, 1.5rem);
+  --fs-body: 1rem;
+  --fs-body-lg: 1.125rem;
+  --fs-small: 0.875rem;
+  --fs-xs: 0.75rem;
+
+  /* ---- Typography: Weights ---- */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* ---- Typography: Line Heights ---- */
+  --lh-tight: 1.2;
+  --lh-snug: 1.4;
+  --lh-normal: 1.6;
+  --lh-relaxed: 1.8;
+
+  /* ---- Typography: Letter Spacing ---- */
+  --ls-tight: -0.02em;
+  --ls-normal: 0;
+  --ls-wide: 0.05em;
+  --ls-wider: 0.1em;
+  --ls-widest: 0.2em;
+
+  /* ---- Spacing Scale ---- */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 8rem;
+  --space-section: clamp(5rem, 10vw, 8rem);
+
+  /* ---- Layout ---- */
+  --max-width: 1280px;
+  --max-width-narrow: 900px;
+  --container-padding: clamp(1.5rem, 4vw, 3rem);
+  --nav-height: 80px;
+
+  /* ---- Shadows ---- */
+  --shadow-sm: 0 1px 3px rgba(44, 44, 44, 0.06);
+  --shadow-md: 0 4px 12px rgba(44, 44, 44, 0.08);
+  --shadow-lg: 0 8px 30px rgba(44, 44, 44, 0.12);
+  --shadow-xl: 0 20px 60px rgba(44, 44, 44, 0.15);
+  --shadow-card: 0 2px 20px rgba(44, 44, 44, 0.06);
+  --shadow-card-hover: 0 12px 40px rgba(44, 44, 44, 0.12);
+
+  /* ---- Borders ---- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* ---- Transitions ---- */
+  --transition-fast: 200ms ease;
+  --transition-normal: 350ms ease;
+  --transition-slow: 500ms ease;
+  --transition-slider: 1200ms ease-in-out;
+
+  /* ---- Z-Index Scale ---- */
+  --z-base: 1;
+  --z-hero-overlay: 5;
+  --z-hero-content: 10;
+  --z-nav: 1000;
+  --z-mobile-menu: 999;
+  --z-lightbox: 2000;
+}
